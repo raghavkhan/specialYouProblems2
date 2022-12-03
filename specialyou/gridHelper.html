@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridHelper</title>
+    <style>
+        .ittem1{grid-area:header; }
+        .ittem2{grid-area:menu; }
+        .ittem3{grid-area:main; }
+        .ittem4{grid-area:right; }
+        .ittem5{grid-area:footer; }
+        
+        .grid-container{
+            display: grid;
+            grid-template-areas: 'header header header header header header'
+                                 'menu main main main right right'
+                                 'menu footer footer footer footer footer';
+            gap:10px;
+            background-color: aqua;
+            padding:10px;
+        }
+
+        .grid-container > div {
+            background-color: rgba(255,255,255,0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+            width:50rem;
+            height:30rem;
+
+        }
+        .imag {
+            height:100%;
+            width:100%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="ittem1"><img src='specialYouImages/circleImage1.jpg' class='imag imag1'/></div>
+        <div class="ittem2"><img src='specialYouImages/circleImage2.jpg' class='imag imag2'/></div>
+        <div class="ittem3"><img src='specialYouImages/circleImage3.jpg' class='imag imag3'/></div>
+        <div class="ittem4"><img src='specialYouImages/circleImage4.jpg' class='imag imag4'/></div>
+        <div class="ittem5"><img src='specialYouImages/circleImage5.jpg' class='imag imag5'/></div>
+    </div>
+    
+</body>
+</html>
